@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+}
+
+.container p{
+    color: white;
+    margin: 45px 5px 0px 30px;
+}
+
+.container .contant{
+    margin-top: 50px;
+}

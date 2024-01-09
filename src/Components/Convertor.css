@@ -1,0 +1,78 @@
+.text{
+    margin: 20px 20px 12px 65px;
+    width: 90%;
+    height: 65vh;
+    border-radius: 15px;
+    background: transparent;
+    color: white;
+    box-shadow: white 0px 4px 6px,
+        rgba(248, 247, 247, 0.513) 0px -12px 30px,
+        rgba(246, 245, 245, 0.578) 0px 4px 6px,
+        rgba(255, 241, 241, 0.568) 0px 4px 6px,
+        rgba(251, 224, 224, 0.5) 0px -3px 5px;
+}
+
+h2{
+    text-align: center;
+    color: rgb(234, 232, 232);
+    font-weight: 800;
+    text-shadow: 2px 2px 5px rgb(254, 10, 230);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.microbag .micro{
+    width: 100px;
+    height: 50px;
+    border: 1.5px solid white;
+    margin: 0 0 0 72px;
+    padding: 0 20px 0 20px;
+    border-radius: 15px;
+}
+
+.microbag .micro:hover{
+    cursor: pointer;
+    background-color: rgb(93, 93, 252);
+    box-shadow: inset rgb(132, 112, 112) 0px 10px 12px,
+        rgba(248, 247, 247, 0.513) 0px -12px 30px,
+        rgba(246, 245, 245, 0.578) 0px 4px 6px,
+        rgba(255, 241, 241, 0.568) 0px 4px 6px,
+        rgba(251, 224, 224, 0.5) 0px -3px 5px;
+}
+
+.microbag .savebtn{
+    width: 100px;
+    height: 50px;
+    border: 1.5px solid white;
+    margin: 0 0 0 72px;
+    padding: 0 20px 0 20px;
+    border-radius: 15px;
+    background: transparent;
+    color: white;
+}
+
+.microbag .savebtn:hover{
+    cursor: pointer;
+    background-color: rgb(93, 93, 252);
+    box-shadow: inset rgb(132, 112, 112) 0px 10px 12px,
+        rgba(248, 247, 247, 0.513) 0px -12px 30px,
+        rgba(246, 245, 245, 0.578) 0px 4px 6px,
+        rgba(255, 241, 241, 0.568) 0px 4px 6px,
+        rgba(251, 224, 224, 0.5) 0px -3px 5px;
+}
+
+@media (max-width: 500px){
+    .text{
+        margin: 0 0 0 42px;
+        width: 350px;
+    }
+
+    .microbag .micro{
+        margin: 0 0 0 15px;
+        padding: 0;
+        width: 50px;
+    }
+    .microbag{
+        margin-left: 27px;
+    }
+}

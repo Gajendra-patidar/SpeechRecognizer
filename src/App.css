@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+.container {
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    width: 100vw;
+    height: 80vh;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgb(132, 112, 112) 0px 10px 12px,
+        rgba(248, 247, 247, 0.513) 0px -12px 30px,
+        rgba(246, 245, 245, 0.578) 0px 4px 6px,
+        rgba(255, 241, 241, 0.568) 0px 4px 6px,
+        rgba(251, 224, 224, 0.5) 0px -3px 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container img {
+    width: 30rem;
+    height: 30rem;
+    float: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.item {
+    margin: 80px 0 0 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.item h1 {
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-style: italic;
+    color: aqua;
 }
 
-.App-link {
-  color: #61dafb;
+.item p {
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item button {
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background: transparent;
+    border: 1.5px solid blue;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(10, 2, 245, 0.409) 0px -12px 30px,
+        rgba(10, 2, 245, 0.409) 0px 4px 6px,
+        rgba(10, 2, 245, 0.409) 0px 4px 5px,
+        rgba(10, 2, 245, 0.409) 0px -3px 5px;
+    color: white;
+}
+
+.item button:hover {
+    box-shadow: rgba(242, 4, 4, 0.423) 0px 54px 55px,
+        rgba(70, 64, 242, 0.409) 0px -12px 30px,
+        rgba(70, 64, 242, 0.409) 0px 4px 6px,
+        rgba(70, 64, 242, 0.409) 0px 4px 5px,
+        rgba(70, 64, 242, 0.409) 0px -3px 5px;
+}
+
+@media (max-width: 1000px){
+    .container {
+        margin-top: 20px;
+        width: 55rem;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: rgb(132, 112, 112) 0px 10px 12px,
+        rgba(248, 247, 247, 0.513) 0px -12px 30px,
+        rgba(246, 245, 245, 0.578) 0px 4px 6px,
+        rgba(255, 241, 241, 0.568) 0px 4px 6px,
+        rgba(251, 224, 224, 0.5) 0px -3px 5px;
+    }
+    
+    .container img {
+        width: 19rem;
+        height: 19rem;
+        margin-top: 100px;
+    }
+    
+    .item {
+        margin: 80px 0 0 10px;
+    }
+    
+    .item h1 {
+        margin-bottom: 20px;
+        font-weight: 900;
+        font-style: italic;
+        color: aqua;
+    }
+    
+    .item p {
+        color: white;
+    }
+    
+    .item button {
+        height: 30px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        background: transparent;
+        border: 1.5px solid blue;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+            rgba(10, 2, 245, 0.409) 0px -12px 30px,
+            rgba(10, 2, 245, 0.409) 0px 4px 6px,
+            rgba(10, 2, 245, 0.409) 0px 4px 5px,
+            rgba(10, 2, 245, 0.409) 0px -3px 5px;
+        color: white;
+    }
+    
+    .item button:hover {
+        box-shadow: rgba(242, 4, 4, 0.423) 0px 54px 55px,
+            rgba(70, 64, 242, 0.409) 0px -12px 30px,
+            rgba(70, 64, 242, 0.409) 0px 4px 6px,
+            rgba(70, 64, 242, 0.409) 0px 4px 5px,
+            rgba(70, 64, 242, 0.409) 0px -3px 5px;
+    }
+}
+
+@media (max-width: 770px){
+    .container{
+        height: 88vh;
+    }
+    .container img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .item p{
+        text-align: justify;
+    }
+}
+
+@media (max-width: 578px){
+    .container{
+        display: block;
+        width: 350px;
+        height: 88.5vh;
+        margin-top: 10px;
+    }
+    .container img {
+        width: 20rem;
+        height: 20rem;
+        margin-top: 0;
+        margin-left: 18px;
+    }
+
+    .container p{
+        overflow: hidden;
+        /* text-overflow: ellipsis;
+        white-space: nowrap; */
+        -webkit-line-clamp: 13;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    }
+
+    .item button {
+        font-size: 15px;
+    }
 }
