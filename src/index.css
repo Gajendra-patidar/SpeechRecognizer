@@ -1,5 +1,12 @@
+:root{
+  --bg--color:  #1E2761;
+  --second-bg--color: #7A2048;
+  --text-color: #fff;
+  --main-color: #408EC6;
+}
+
 body {
-  background: url(../src/Images/backbody.jpg);
+  background-color: var(--bg--color);
   background-size: cover;
   background-position: center;
   width: 100%;
